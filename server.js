@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
   }
 
   /*\ /login */
-  if (req.url === 'https://coruscating-cobbler-0c4041.netlify.app/login' && req.method === 'POST') {
+  if (req.url === 'https://isa-secure-hackthon-be.onrender.com/login' && req.method === 'POST') {
     let body = '';
     req.on('data', chunk => {
       body += chunk.toString(); // convert Buffer to string
@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
       }
     });
     /*\ /something */
-  } else if (req.url === 'https://coruscating-cobbler-0c4041.netlify.app/something' && req.method === 'GET') {
+  } else if (req.url === 'https://isa-secure-hackthon-be.onrender.com/something' && req.method === 'GET') {
     console.log("I AM HERE!!!!!!");
     // Check if the user is logged in by checking the cookie
     const cookie = req.headers.cookie;
